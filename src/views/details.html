@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>列表页</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../lib/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/details.css">
+</head>
+
+<body>
+    <div id='app'>
+        <div id='top'>
+            <div id='header'>
+                <div class='header'>
+                    <div class='header-top'>
+                        <a href="">
+                            <i></i>
+                            <span>商家中心</span>
+                        </a>
+                        <a href="">
+                            <i></i>
+                            <span>关于Gshopper</span>
+                        </a>
+                        <a href="">
+                            <i></i>
+                            <span>下载 Gshopper App</span>
+                        </a>
+                        <div class='country'>
+                            <span>收货地区</span>
+                            <img src="../lib/icon/cn.png" alt="">
+                            <i class='glyphicon glyphicon-menu-down'></i>
+                            <div class="dropdown">
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <p class='content-ship'>当前配送国家/地区为 中国，货币为 CNY¥</p>
+                                    <div class='content-search'>
+                                        <input type="text" placeholder="搜索配送地">
+                                        <i class='glyphicon glyphicon-search'></i>
+                                    </div>
+                                    <p>已选</p>
+                                    <li>
+                                        <a href="#"><img src="../lib/icon/cn.png" alt="">中国<span>CNY ¥</span></a>
+                                    </li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><img src="../lib/icon/au.png" alt="">澳大利亚<span>AUD $</span></a></li>
+                                    <li><a href="#"><img src="../lib/icon/adl.png" alt="">奥地利<span>EUR €</span></a></li>
+                                    <li><a href="#"><img src="../lib/icon/be.png" alt="">比利时<span>EUR €</span></a></li>
+                                    <li><a href="#"><img src="../lib/icon/cn.png" alt="">中国<span>CNY ¥</span></a></li>
+                                    <li><a href="#"><img src="../lib/icon/jk.png" alt="">捷克<span>EUR €</span></a></li>
+                                    <li><a href="#"><img src="../lib/icon/dm.png" alt="">丹麦<span>DKK kr</span></a></li>
+                                    <li><a href="#"><img src="../lib/icon/fg.png" alt="">法国<span>EUR €</span></a></li>
+                                    <li><a href="#"><img src="../lib/icon/de.png" alt="">德国<span>EUR €</span></a></li>
+                                    <li><a href="#"><img src="../lib/icon/xl.png" alt="">希腊<span>EUR €</span></a></li>
+                                    <li><a href="#"><img src="../lib/icon/hk.png" alt="">香港<span>HKD $</span></a></li>
+                                    <li><a href="#"><img src="../lib/icon/ael.png" alt="">爱尔兰<span>EUR €</span></a></li>
+                                    <li><a href="#"><img src="../lib/icon/it.png" alt="">意大利<span>EUR €</span></a></li>
+                                    <li><a href="#"><img src="../lib/icon/jp.png" alt="">日本<span>JPY ¥</span></a></li>
+                                    <li><a href="#"><img src="../lib/icon/nl.png" alt="">荷兰<span>EUR €</span></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class='lang'>
+                            <span>简体中文</span>
+                            <i class='glyphicon glyphicon-menu-down'></i>
+                            <ul class='lang-nav'>
+                                <li>
+                                    Français
+                                </li>
+                                <li>
+                                    한국어
+                                </li>
+                                <li>
+                                    中文繁體
+                                </li>
+                                <li>
+                                    Español
+                                </li>
+                                <li>
+                                    Italiana
+                                </li>
+                                <li>
+                                    简体中文
+                                </li>
+                                <li>
+                                    日本語
+                                </li>
+                                <li>
+                                    English
+                                </li>
+                                <li>
+                                    Deutsch
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class='header-bottom'>
+                        <div class='header-bottom-logo'>
+                            <a href=""></a>
+                        </div>
+                        <div class='header-bottom-sreach'>
+
+                            <div class='sreachBox'>
+                                <div class='sreachBox-select'>
+                                    <span>全部</span>
+                                    <i class='glyphicon glyphicon-menu-down'></i>
+                                    <ul class='sreachBox-ul'>
+                                        <li>全部</li>
+                                        <li>数码家电</li>
+                                        <li>美容彩妆</li>
+                                        <li>家居生活</li>
+                                        <li>母婴专区</li>
+                                        <li>服饰鞋包</li>
+                                        <li>户外健身</li>
+                                        <li>营养保健</li>
+                                        <li>其他</li>
+                                    </ul>
+                                </div>
+                                <input type="text" placeholder="请输入关键字" class='sreachBox-inp'>
+                                <div class='searchBox-icon'>
+                                    <i class='glyphicon glyphicon-search'></i>
+                                </div>
+                            </div>
+
+                            <ul class='hot-sreach'>
+                                <!-- <li>香水</li>
+                            <li>科颜氏</li>
+                            <li>小棕瓶</li>
+                            <li>Goldfinch 牙膏</li>
+                            <li>倩碧</li>
+                            <li>雅诗兰黛眼霜</li>
+                            <li>卡诗</li>
+                            <li>Fresh 馥蕾诗</li>
+                            <li>乐高</li>
+                            <li>资生堂</li>
+                            <li>买一送一</li>
+                            <li>韩国</li>
+                            <li>WHOO</li>
+                            <li>MEDIHEAL</li>
+                            <li>Dr.Jart</li>
+                            <li>后</li>
+                            <li>CNP</li>
+                            <li>蒂佳婷</li>
+                            <li>SK-II</li>
+                            <li>洗颜专科</li> -->
+                            </ul>
+                        </div>
+                        <div class='header-bottom-sign'>
+                            <div class='login'><i></i><span>登录</span></div>
+                            <div><i></i><span>愿望单</span></div>
+                            <div><i></i><span>购物车</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class='center'>
+            <div class='content-title'>
+                <a href="../index.html">首页<i class='glyphicon glyphicon-menu-right'></i></a>
+                <span class='content-h3'></span>
+            </div>
+            <ul class='content'>
+                <!-- <li class='detail'>
+                    <div class='link-detail'>
+                        <i class='glyphicon glyphicon-heart'></i>
+                        <div class='img-content'>
+                            <img src="https://ws.izenecdn.com/pms/2021/02/27026aa63e6e43e6a95f4f910dabaed2.jpeg" alt="">
+                        </div>
+                        <div class='title-info'>
+                            <div class='title-brand'>
+                                <img src="	https://ws.izenecdn.com/cms/library/flags/jp.png" alt="">
+                                <span class='brand-info'>黛珂</span>
+                            </div>
+                            <span>COSME DECORTE黛珂 天然植物高机能紫苏水 新春限量版</span>
+                        </div>
+                        <div class='price-info'>
+                            <p class='goods-price'>￥ 159.00</p>
+                            <p class='discount'>
+                                <span>25%</span>
+                                <i class='icon-save'></i>
+                            </p>
+                        </div>
+                        <div class='rate-wrap'>
+                            <div class="van-rate">
+                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item" >
+                                    <path
+                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                    </path>
+                                </svg>
+                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item"
+                                    >
+                                    <path
+                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                    </path>
+                                </svg>
+                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item"
+                                    >
+                                    <path
+                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                    </path>
+                                </svg>
+                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item"
+                                    >
+                                    <path
+                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                    </path>
+                                </svg>
+                                <svg fill="#bdbdbd" viewBox="0 0 32 32" class="van-rate__item"
+                                    >
+                                    <path
+                                        d="M32 12.408l-11.056-1.607-4.944-10.018-4.944 10.018-11.056 1.607 8 7.798-1.889 11.011 9.889-5.199 9.889 5.199-1.889-11.011 8-7.798z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <span class='review-num'>7</span>
+                        </div>
+                        <div class='store-warp'>
+                            <i class='icon-store'></i>
+                            <span class='store-name'>Beauty & Tech</span>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+        </div>
+        <div id='footer'>
+            <div class='footer'>
+                <ul class="service-list">
+                    <li>
+                        <div class="service-icon icon-one"></div>
+                        <div class="service-content">
+                            <h2>海量选择</h2>
+                            <p>发现全球正品好货</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-icon icon-two"></div>
+                        <div class="service-content">
+                            <h2>高性价比</h2>
+                            <p>专注为你省时省钱</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-icon icon-three"></div>
+                        <div class="service-content">
+                            <h2>全球评论</h2>
+                            <p>参阅全球买家评论</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="service-icon icon-four"></div>
+                        <div class="service-content">
+                            <h2>安心购物</h2>
+                            <p>购物流程安全可靠</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class='footer-link'>
+                    <ul class='footer-link-list'>
+                        <li class='footer-item'>
+                            <div class='link-title'>帮助中心</div>
+                            <div class='link-list'>
+                                <p class='link-item'><a href="">法律条款</a></p>
+                                <p class='link-item'><a href="">退货与退款</a></p>
+                                <p class='link-item'><a href="">消费者告知书</a></p>
+                                <p class='link-item'><a href="">常见问题</a></p>
+                                <p class='link-item'><a href="">Gshopper 平台入驻协议</a></p>
+                                <p class='link-item'><a href="">隐私政策</a></p>
+                            </div>
+                        </li>
+                        <li class='footer-item'>
+                            <div class='link-title'>关于 Gshopper</div>
+                            <div class='link-list'>
+                                <p class='link-item'><a href="">联系我们</a></p>
+                                <p class='link-item'><a href="">企业信息</a></p>
+                            </div>
+                        </li>
+                        <li class='footer-item big-item'>
+                            <div class='link-title'>Gshopper App</div>
+                            <div class='link-list'>
+                                <p class='link-item'><i class='glyphicon glyphicon-phone'></i><a href="">下载Gshopper
+                                        App</a></p>
+                                <div class='footer-box'>
+                                    <div class='footer-title'><span>合作品牌</span></div>
+                                    <div class='footer-brand-list'>
+                                        <a href="http://www.rozi.net/" class='brand-rozi'></a>
+                                        <a href="https://www.shopzenez.com/" class='brand-zenez'></a>
+                                        <a href="https://www.gohyo.com/" class='brand-gohyo'></a>
+                                        <a href="https://www.flurff.com/" class='brand-flurff'></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class='footer-item big-item'>
+                            <div class='footer-box'>
+                                <div class='footer-title'><span>最新资讯</span></div>
+                                <div class='footer-search'>
+                                    <div class='search-input'>
+                                        <input type="text" name="" id="" placeholder="请输入您的邮箱">
+                                        <button class='search-btn'>订阅</button>
+                                    </div>
+                                    <p class='search-tips'>订阅最新资讯邮件推送，第一时间获取优惠信息！</p>
+                                </div>
+                            </div>
+                            <div class='footer-box'>
+                                <div class='footer-title'><span>关注我们</span></div>
+                                <div class='footer-list'>
+                                    <a href="" class='footer-icon icon-weibo'></a>
+                                    <a href="" class='footer-icon icon-xhs'></a>
+                                    <div class='footer-wecat'>
+                                        <a href="" class='footer-icon icon-wecat'></a>
+                                        <div class='footer-wecat-qrcode'>
+                                            <img src="https://ws.izenecdn.com/st/wapsite/img/wechat-promote-qrcode.d136afc4.png"
+                                                alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class='footer-method'>
+                    <ul class='method-list'>
+                        <li class='method-item method-UnionPay'></li>
+                        <li class='method-item method-visa'></li>
+                        <li class='method-item method-master'></li>
+                        <li class='method-item method-ameri'></li>
+                        <li class='method-item method-alipay'></li>
+                        <li class='method-item method-paypal'></li>
+                    </ul>
+                </div>
+                <div class='footer-company'>
+                    <p class='company-name'>
+                        <span class='company-name-item'>沪 ICP 备 B2-20130065</span>
+                        <span class='company-name-item'>（沪）-经营性-2020-0041</span>
+                        <a href=""><img src="https://ws.izenecdn.com/st/wapsite/img/gongan.d0289dc0.png" alt="">沪公网安备
+                            31011502008503 号</a>
+                        <a href=""><img src="https://ws.izenecdn.com/st/wapsite/img/business-icon.cd20b57f.png"
+                                alt="">上海载和网络科技有限公司</a>
+                    </p>
+                    <p class='company-name'>
+                        <span class='company-name-item'>中国（上海）自由贸易试验区东方路1217、1217-1号6幢6楼F-3</span>
+                    </p>
+                </div>
+            </div>
+            <div id='copyright'>
+                <span>Copyright © 2021 Gshopper. </span>
+                <span>All Rights Reserved. </span>
+            </div>
+            <div class='back-top'>
+                <p class='back-top-p'></p>
+                <i class='glyphicon glyphicon-arrow-up'></i>
+            </div>
+            <div class='download-bubble'>
+                <div class='download-icon'><i></i></div>
+                <div class='download-dialog'>
+                    <p>下载Gshopper客户端</p>
+                    <div class='download-link'>
+                        <img src="https://ws.izenecdn.com/st/wapsite/img/download-qrcord.1aeb7188.png" alt="">
+                        <div class='download-btn'>
+                            <a href="" class='download-btn-ios'></a>
+                            <a href="" class='download-btn-android'></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../lib/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/footer.js"></script>
+    <script src="../js/details.js"></script>
+</body>
+
+</html>
